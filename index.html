@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Center- अध्यापन अनुमतिपत्र तयारी</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', Arial, sans-serif; }
+        body { background-color: #f4f7f6; color: #333; line-height: 1.6; scroll-behavior: smooth; }
+        header { background: #0c4a60; color: white; padding: 25px 20px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .logo { font-size: 26px; font-weight: bold; color: #efd07b; }
+        nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: 500; font-size: 16px; }
+        nav a:hover { color: #efd07b; }
+        .hero { background: linear-gradient(rgba(12, 74, 96, 0.85), rgba(12, 74, 96, 0.85)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover; padding: 100px 20px; text-align: center; color: white; }
+        .hero h1 { font-size: 42px; margin-bottom: 20px; color: #efd07b; }
+        .hero p { font-size: 20px; max-width: 700px; margin: 0 auto 30px; }
+        .btn { background: #efd07b; color: #0c4a60; padding: 14px 35px; text-decoration: none; font-weight: bold; border-radius: 5px; font-size: 18px; transition: 0.3s; display: inline-block; border: none; cursor: pointer; }
+        .btn:hover { background: white; color: #0c4a60; transform: translateY(-2px); }
+        .container { max-width: 1000px; margin: 60px auto; padding: 0 20px; }
+        .section-title { text-align: center; font-size: 32px; margin-bottom: 40px; color: #0c4a60; font-weight: bold; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; border-top: 5px solid #0c4a60; }
+        .card h3 { margin-bottom: 15px; color: #0c4a60; font-size: 22px; }
+        .quiz-box { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #efd07b; margin-bottom: 20px; }
+        .question { font-size: 18px; font-weight: bold; margin-bottom: 15px; color: #0c4a60; }
+        .options { list-style: none; }
+        .options li { margin-bottom: 10px; }
+        .options label { background: #f9f9f9; padding: 12px; display: block; border: 1px solid #ddd; border-radius: 5px; cursor: pointer; transition: 0.2s; }
+        .options label:hover { background: #f0f4f6; border-color: #0c4a60; }
+        .options input { margin-right: 10px; transform: scale(1.2); }
+        #result-box { display: none; margin-top: 30px; padding: 20px; background: #e2f0d9; color: #385723; font-weight: bold; text-align: center; border-radius: 5px; font-size: 22px; border: 2px solid #a9d18e; }
+        .form-section { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); max-width: 600px; margin: 0 auto; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: bold; color: #0c4a60; }
+        .form-group input, .form-group select { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; }
+        .submit-btn { background: #0c4a60; color: white; border: none; width: 100%; padding: 14px; font-size: 18px; border-radius: 4px; cursor: pointer; font-weight: bold; transition: 0.3s; }
+        .submit-btn:hover { background: #083344; }
+        .contact-info { text-align: center; font-size: 18px; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .contact-info p { margin: 15px 0; color: #444; }
+        footer { background: #0c4a60; color: white; text-align: center; padding: 25px; margin-top: 60px; font-size: 16px; }
+        @media (max-width: 600px) { header { flex-direction: column; } nav { margin-top: 10px; } .hero h1 { font-size: 30px; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Education Center</div>
+        <nav>
+            <a href="#home">होम</a>
+            <a href="#features">विशेषताहरू</a>
+            <a href="#mock-test">नमुना परीक्षा</a>
+            <a href="#admission">भर्ना फारम</a>
+            <a href="#contact">सम्पर्क</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>अध्यापन अनुमतिपत्र (Teaching License) तयारी कक्षा</h1>
+        <p>शिक्षक सेवा आयोगको नयाँ पाठ्यक्रममा आधारित डिजिटल प्रविधि सहितको सर्वोत्कृष्ट सिकाइ केन्द्र।</p>
+        <a href="#mock-test" class="btn">फ्री Mock Test दिनुहोस्</a>
+    </section>
+
+    <div class="container" id="features">
+        <h2 class="section-title">हाम्रा मुख्य विशेषताहरू</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>विज्ञ प्रशिक्षकहरू</h3>
+                <p>लामो समय शिक्षक सेवामा अनुभव बटुल्नुभएका आदरणीय गुरुहरूद्वारा अध्यापन।</p>
+            </div>
+            <div class="card">
+                <h3>दैनिक अनलाइन परीक्षा</h3>
+                <p>पढेका कुराहरूको तुरुन्तै स्व-मूल्याङ्कन गर्न प्रत्येक दिन नयाँ Mock Test को व्यवस्था।</p>
+            </div>
+            <div class="card">
+                <h3>उत्कृष्ट नोट र PDF</h3>
+                <p>परीक्षाको दृष्टिकोणले महत्वपूर्ण सामग्री, रेकर्डेड भिडियो र सूत्रसहितको नोटहरू।</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 10 Questions Live Mock Test Section -->
+    <div class="container" id="mock-test">
+        <h2 class="section-title">लाइसेंस परीक्षा - १० वस्तुगत प्रश्नहरू (Mock Test)</h2>
+
+        <form id="quizForm">
+            <div class="quiz-box">
+                <div class="question">१. नेपालको वर्तमान संविधान अनुसार 'शिक्षा सम्बन्धी हक' कुन धारामा व्यवस्था गरिएको छ?</div>
+                <ul class="options">
+                    <li><label><input type="radio" name="q1" value="wrong"> धारा ३०</label></li>
+                    <li><label><input type="radio" name="q1" value="correct"> धारा ३१</label></li>
+                    <li><label><input type="radio" name="q1" value="wrong"> धारा ३२</label></li>
+                </ul>
+            </div>
+
+            <div class="quiz-box">
+                <div class="question">२. राष्ट्रिय शिक्षा नीति, २०७६ अनुसार विद्यालय शिक्षाको संरचना कस्तो रहेको छ?</div>
+                <ul class="options">
+                    <li><label><input type="radio" name="q2" value="wrong"> ५+३+४</label></li>
+                    <li><label><input type="radio" name="q2" value="correct"> ४+४+४</label></li>
+                    <li><label><input type="radio" name="q2" value="wrong"> ५+४+४</label></li>
+                </ul>
+            </div>
+
+            <div class="quiz-box">
+                <div class="question">३. शिक्षक सक्षमताको प्रारूप २०७२ अनुसार शिक्षकका सक्षमताहरू कतिवटा तोकिएका छन्?</div>
+                <ul class="options">
+                    <li><label><input type="radio" name="q3" value="wrong"> ५ वटा</label></li>
+                    <li><label><input type="radio" name="q3" value="wrong"> ७ वटा</label></li>
+                    <li><label><input type="radio" name="q3" value="correct"> ८ वटा</label></li>
+                </ul>
+            </div>
+
+            <div class="quiz-box">
+                <div class="question">४. बालअधिकार सम्बन्धी महासन्धि (UNCRC) कहिले पारित भएको हो?</div>
+                <ul class="options">
+                    <li><label><input type="radio" name="q4" value="correct"> सन् १९८९ नोभेम्बर २०</label></li>
+                    <li><label><input type="radio" name="q4" value="wrong"> सन् १९९० नोभेम्बर २०</label></li>
+                    <li><label><input type="radio" name="q4" value="wrong"> सन् १९४८ डिसेम्बर १०</label></li>
+                </ul>
+            </div>
+
+            <div class="quiz-box">
+                <div class="question">५. कक्षाकोठा व्यवस्थापनको मुख्य उद्देश्य के हो?</div>
+                <ul class="options">
+                    <li><label><input type="radio" name="q5" value="wrong"> विद्यार्थीलाई कडा अनुशासनमा राख्नु</label></li>
+                    <li><label><input type="radio" name="q5" value="correct"> सिकाइ अनुकूल वातावरण निर्माण गर्नु</label></li>
+                    <li><label><input type="radio" name="q5" value="wrong"> भौतिक पूर्वाधार सजाउनु</label></li>
+                </ul>
+            </div>
+
+            <div class="quiz-box">
+                <div class="question">६. पाठ्यक्रम (Curriculum) शब्दको शाब्दिक अर्थ के हुन्छ?</div>
+                <ul class="options">
+                    <li><label><input type="radio" name="q6" value="wrong"> पुस्तकहरूको सूची</label></li>
+                    <li><label><input type="radio" name="q6" value="correct"> दौडको मैदान वा बाटो</label></li>
+                    <li><label><input type="radio" name="q6" value="wrong"> ज्ञानको भण्डार</label></li>
+                </ul>
+            </div>
+
+            <div class="quiz-box">
+                <div class="question">७. उदाहरणबाट नियमतर्फ लैजाने विधिलाई कुन विधि भनिन्छ?</div>
+                <ul class="options">
+                    <li><label><input type="radio" name="q7" value="correct"> आगमन विधि</label></li>
+                    <li><label><input type="radio" name="q7" value="wrong"> निगम विधि</label></li>
+                    <li><label><input type="radio" name="q7" value="wrong"> प्रदर्शन विधि</label></li>
+                </ul>
+            </div>
+
+            <div class="quiz-box">
+                <div class="question">८. कम्प्युटरको 'Brain' भनेर कुन भागलाई चिनिन्छ?</div>
+                <ul class="options">
+                    <li><label><input type="radio" name="q8" value="wrong"> Monitor</label></li>
+                    <li><label><input type="radio" name="q8" value="correct"> CPU</label></li>
+                    <li><label><input type="radio" name="q8" value="wrong"> RAM</label></li>
+                </ul>
+            </div>
+
+            <div class="quiz-box">
+                <div class="question">९. 'सिकाइ' (Learning) को परिभाषा अनुसार सिकाइ के हो?</div>
+                <ul class="options">
+                    <li><label><input type="radio" name="q9" value="correct"> अनुभवका माध्यमबाट व्यवहारमा आउने स्थायी परिवर्तन</label></li>
+                    <li><label><input type="radio" name="q9" value="wrong"> जन्मजात प्राप्त गुण</label></li>
+                    <li><label><input type="radio" name="q9" value="wrong"> उमेर बढ्दै जानु</label></li>
+                </ul>
+            </div>
+
+            <div class="quiz-box">
+                <div class="question">१०. बालबालिकाको सिकाइमा सबैभन्दा बढी प्रभाव पार्ने तत्व कुन हो?</div>
+                <ul class="options">
+                    <li><label><input type="radio" name="q10" value="correct"> शिक्षक</label></li>
+                    <li><label><input type="radio" name="q10" value="wrong"> फर्निचर</label></li>
+                    <li><label><input type="radio" name="q10" value="wrong"> स्कुलको गाडी</label></li>
+                </ul>
+            </div>
+
+            <div style="text-align: center;">
+                <button type="submit" class="btn">परीक्षा बुझाउनुहोस् (Submit)</button>
+            </div>
+
+            <div id="result-box"></div>
+        </form>
+    </div>
+
+    <!-- Admission Form -->
+    <div class="container" id="admission">
+        <h2 class="section-title">भर्ना फारम (Admission Form)</h2>
+        <div class="form-section">
+            <form name="admission" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
+                <input type="hidden" name="form-name" value="admission" />
+                <p style="display:none">
+                    <label>Don't fill this out: <input name="bot-field" /></label>
+                </p>
+                <div class="form-group">
+                    <label for="fullname">पूरा नाम (Full Name)</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">सम्पर्क नं. (Phone)</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">इमेल (Email)</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="level">तयारी गरिरहनुभएको तह (Level)</label>
+                    <select id="level" name="level" required>
+                        <option value="">- छान्नुहोस् -</option>
+                        <option value="primary">निमावि (Primary)</option>
+                        <option value="lower-secondary">नि.मा.वि (Lower Secondary)</option>
+                        <option value="secondary">मा.वि (Secondary)</option>
+                        <option value="higher-secondary">उच्च माध्यमिक (+२)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="subject">विषय (Subject)</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">- छान्नुहोस् -</option>
+                        <option value="nepali">नेपाली</option>
+                        <option value="english">अंग्रेजी</option>
+                        <option value="math">गणित</option>
+                        <option value="science">विज्ञान</option>
+                        <option value="social">सामाजिक अध्ययन</option>
+                        <option value="health">स्वास्थ्य तथा शारीरिक शिक्षा</option>
+                        <option value="computer">कम्प्युटर शिक्षा</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">भर्ना फारम पठाउनुहोस्</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container" id="contact">
+        <h2 class="section-title">सम्पर्क (Contact)</h2>
+        <div class="contact-info">
+            <p><strong>ठेगाना:</strong> Education Center, नेपाल</p>
+            <p><strong>फोन:</strong> ९८०१५३८७१४</p>
+            <p><strong>इमेल:</strong> info@educationcenter.edu.np</p>
+            <p>तपाईंको शिक्षक सेवा अनुमतिपत्रको यात्रा हामीसँग सुरु गर्नुहोस्!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; २०२६ Education Center | सर्वाधिकार सुरक्षित</p>
+    </footer>
+
+    <script>
+        document.getElementById('quizForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            let score = 0;
+            let unanswered = 0;
+            const total = 10;
+            for (let i = 1; i <= total; i++) {
+                const selected = document.querySelector('input[name="q' + i + '"]:checked');
+                if (!selected) { unanswered++; continue; }
+                if (selected.value === 'correct') score++;
+            }
+            if (unanswered > 0) {
+                alert('कृपया सबै प्रश्नको उत्तर दिनुहोस्। (' + unanswered + ' प्रश्न बाँकी छ)');
+                return;
+            }
+            const resultBox = document.getElementById('result-box');
+            const messages = {
+                10: 'अति उत्तम! (Excellent)',
+                8: 'राम्रो! (Very Good)',
+                6: 'ठीक छ। अझै अभ्यास गर्नुहोस्।',
+                4: 'अझै मेहनत गर्नुपर्छ।',
+                0: 'अझै धेरै अभ्यास आवश्यक छ।'
+            };
+            let msg = 'तपाईंको अंक: ' + score + ' / ' + total + ' — ';
+            msg += score >= 8 ? messages[8] : (score >= 6 ? messages[6] : (score >= 4 ? messages[4] : messages[0]));
+            if (score === total) msg = messages[10] + ' ' + msg;
+            resultBox.textContent = msg;
+            resultBox.style.display = 'block';
+            resultBox.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
