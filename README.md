@@ -17,8 +17,6 @@ Open `index.html` directly in a browser, or serve the folder:
 npx serve .
 ```
 
-Deploying to Netlify automatically registers the `admission` form (detected from HTML at build time). Submissions appear in the Netlify UI under Forms.
-
 ## Structure
 - `index.html` — the full site (styles inline, quiz logic inline)
 - `thank-you.html` — post-submission redirect target
