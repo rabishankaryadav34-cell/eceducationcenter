@@ -7,7 +7,6 @@ A Nepali-language single-page site for a Teaching License exam preparation cente
 - Hero section with exam prep call to action
 - Features cards (expert trainers, daily online tests, notes/PDFs)
 - Interactive 10-question MCQ mock test with instant scoring (client-side)
-- Admission form powered by **Netlify Forms** (with honeypot spam protection)
 - Contact section and thank-you page
 
 ## Run locally
